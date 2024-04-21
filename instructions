@@ -1,0 +1,8 @@
+Code compiles ar one program using teh following commands:
+1.) copy and past this into your terminal(compiles into one program):
+    g++ -c main.cpp -o main.o -std=c++17
+    g++ -c user.cpp -o user.o -std=c++17
+    g++ -c posts.cpp -o posts.o -std=c++17
+    g++ main.o user.o posts.o -o program
+2.) type: ./program inorder to execute program
+
