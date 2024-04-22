@@ -5,4 +5,3 @@ Code compiles ar one program using teh following commands:
     g++ -c posts.cpp -o posts.o -std=c++17
     g++ main.o user.o posts.o -o program
 2.) type: ./program inorder to execute program
-
