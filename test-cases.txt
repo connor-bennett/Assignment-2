@@ -1,0 +1,32 @@
+use given cases first:
+
+    goldenlover1;Jane Doe;CA;[petpal4ever,whiskerwatcher]
+    whiskerwatcher;John Doe;NY;[goldenlover1]
+    petpal4ever;Great Name;WV;[goldenlover1]
+
+create our test users 1,2,&3
+    user1;user 1;OR;[petpal4ever,user2]
+    user2;user 2;MA;[user1;whiskerwatcher]
+
+post visibility expected as stated: 
+    user1 see's:          user2, petpal4ever
+    user2 see's:          user1, whicketwatcher
+    goldenlover1 sees's:  petpal4ever, whicketwatcher
+    whiskerwatcher see's: goldenlover1
+    petpal4ever see's:    goldenlover1
+
+Posts:
+    only petpal4ever & goldenlover1 hace Posts so post output as follows
+    user1:        None 
+    user2:        None 
+    goldenlover1: post:p1924 all can see not privacy
+    goldenlover1: post: p9367, only frineds can see
+    petpal4ever:  None
+    
+Location:
+    user1:          OR
+    user2:          MA
+    goldenlover1:   CA
+    whicketwatcher: NY
+    petpal4ever:    WV
+

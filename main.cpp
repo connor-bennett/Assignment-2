@@ -109,10 +109,12 @@ int main() {
                     std::cout << "Post ID: " << post.getPostId() << ", Visibility: " << post.getVisibility() << std::endl;
                 }
             }
+        //n get location
         } else if (action == "3") {
-            // Your existing code for searching by location
+            std::cout << user.getLocation() << std::endl;
+        // get post id's
         } else if (action == "4") {
-            // Your existing code for retrieving posts
+            std::cout <<< user.getPostId() << std::endl;
         } else if (action == "5") {
             break; // Exit the program
         } else {
